@@ -1,0 +1,45 @@
+@import '../styles/index.css';
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.left-div, .right-div {
+    flex: 1;
+    border: 1px solid black;
+    height: inherit;
+}
+
+.left-div {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.left-div > .inner-div {
+    width: 50%;
+    margin-left: 100px;
+}
+
+.inner-div h1{
+    font-size: 4rem;
+    color: var(--white);
+    margin-top: 16px;
+}
+
+.inner-div {
+    color: var(--secondary);
+}
+
+.right-div {
+    background-image: url('/background.png');
+    background-size: cover;
+    background-position: center;
+}
